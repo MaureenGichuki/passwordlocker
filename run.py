@@ -49,6 +49,7 @@ def main():
             password=input()
             save_user(create_newuser(username,password))
             print("\n")
+            print("."*50)
             print("Hello your password locker has been successfully activated")
             print(f"Username:{username}")
             print(f"Password:{password}")
@@ -56,10 +57,12 @@ def main():
             print("You can now use you details to login")     
         elif option == "Lgn":
             print("\n")
+            print("."*50)
             print("Enter username")
             username=input()
             print("Enter password")
             password=input()
+           
             if find_user(username):
                 print("\n")
                 print("Create new account or View existing accounts key in add exist for adding accounts or viewing existing accounts respectively")
@@ -84,12 +87,14 @@ def main():
                         accpassword="".join(random.choice(letters) for i in range(7))
                         print(f"Password:{accpassword}")
                         print("\n")
+                    print("."*30)
                     print(f"Username:{accusername}")
                     print(f"Account name:{accname}")
                     print(f"Account password:{accpassword}")
                     print("\n")
                 elif selection == "exist":
                     if find_credential(accname):
+                        print("."*50)
                         print("Here are your accounts:")
                         for user in display_user():
                             print(f"Account:{user.accname}")
@@ -99,9 +104,10 @@ def main():
                             print(f"Password:{user.accpassword}")
                             
             else:  print("Would you like to sign out")
-            print("Would you like to sign out yes")
+            print("Would you like to sign out if yes, type yes")
             decision=input()
             if decision =="yes":
+                print("."*50)
                 print("Thanks for choosing passwordlocker!")
 
 if __name__ == "__main__":
