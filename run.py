@@ -1,4 +1,6 @@
-from user import user
+from tokenize import Name
+from unicodedata import name
+from user import User, user
 from user import credentials
 
 
@@ -11,3 +13,7 @@ def save_user(user):
 
 def delete_user(user):
     user.delete_user()
+
+def find_user(user):
+    return User.find_user(name)
+
