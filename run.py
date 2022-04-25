@@ -21,3 +21,17 @@ def display_user():
 def create_newcredential(accusername,accname,accpassword):
     new_credential= Credentials(accusername,accname,accpassword)
     return new_credential
+
+def save_credential(user):
+    user.save_credntial()
+
+def delete_credential(user):
+    user.delete_credential()
+
+def find_credential(a_name):
+    return Credentials.find_credential(a_name)
+
+def display_user():
+    return Credentials.credential_display()
+
+def main():
