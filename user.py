@@ -53,7 +53,7 @@ class User:
                 return user
 
 
-class credentials:
+class Credentials:
     """
 
     this class instantiates user credentials
@@ -75,14 +75,14 @@ class credentials:
         the method save_credential saves credential information into the credentiallist dict
 
         """
-        credentials.credentiallist.append(self)
+        Credentials.credentiallist.append(self)
     
     def delete_credential(self):
         """
         the method delete_credential deletes account information from the credentiallist dict
 
         """
-        credentials.credentiallist.remove(self)
+        Credentials.credentiallist.remove(self)
 
     @classmethod
     def credential_display(cls):
