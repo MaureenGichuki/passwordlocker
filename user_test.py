@@ -33,3 +33,11 @@ def test_save_user(self):
     """
     self.newuser.save_user()
     self.assertEqual(len(User.userlist),1)
+
+def test_delete_user(self):
+    """
+
+    test to check if user is deleted from the userlist dict
+
+    """
+ 
