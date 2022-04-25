@@ -7,3 +7,13 @@ class User:
     """
 
     userlist=[]
+
+    def __init__(self,username,password):
+
+        """
+        __init__ method allows the object(self) to be defined
+
+        """
+       
+        self.username=username
+        self.password=password
