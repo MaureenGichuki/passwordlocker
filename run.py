@@ -1,3 +1,6 @@
+import random
+import string
+
 from user import User
 from user import Credentials
 
@@ -71,7 +74,7 @@ def main():
                         accpassword=input()
                     elif choice == "Gp":
                         letters = string.ascii_lowercase
-                        accpassword="".join(random.choice(letters) for i range(5))
+                        accpassword="".join(random.choice(letters) for i in range(5,7))
                         print(f"Password:{accpassword}")
                     print(f"Username:{accusername} Account name:{accname} Account password:{accpassword}")
                 elif selection == "exist":
