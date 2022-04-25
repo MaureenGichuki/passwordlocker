@@ -21,8 +21,8 @@ The application requires
 * pip
 
 ## Cloning
-Open the terminal through {Ctrl+Alt+T}
-git clone [https://github.com/MaureenGichuki/passwordlocker.git]
+* Open the terminal through {Ctrl+Alt+T}
+* git clone [https://github.com/MaureenGichuki/passwordlocker.git]
 
 ## Technologies Used
 * python3.6
