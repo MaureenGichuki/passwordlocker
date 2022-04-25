@@ -57,3 +57,13 @@ class credentials:
     this class instantiates user credentials
 
     """
+    credentiallist=[]
+    def __init__(self,accusername,accname,accpassword):
+            """
+
+            the method defines properties of the account
+
+            """
+            self.accusername=accusername
+            self.accname=accname
+            self.accpassword=accpassword
