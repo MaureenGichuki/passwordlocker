@@ -23,6 +23,7 @@ As a user, I also want to view my various account credentials and their password
 #### The application requires
 * python3.6
 * pip
+* pyperclip
 
 ## Cloning
 * Open the terminal through {Ctrl+Alt+T}
