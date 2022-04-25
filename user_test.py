@@ -41,3 +41,5 @@ def test_delete_user(self):
 
     """
  
+if __name__ == "__main__":
+    unittest.main()
