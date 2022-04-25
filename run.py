@@ -48,20 +48,26 @@ def main():
             print("Please enter desired password:")
             password=input()
             save_user(create_newuser(username,password))
+            print("\n")
             print("Hello your password locker has been successfully activated")
             print(f"Username:{username}")
             print(f"Password:{password}")
-            print("You can now use you details to login")
+            print("\n")
+            print("You can now use you details to login")     
         elif option == "Lgn":
+            print("\n")
             print("Enter username")
             username=input()
             print("Enter password")
             password=input()
             if find_user(username):
+                print("\n")
                 print("Create new account or View existing accounts key in add exist for adding accounts or viewing existing accounts respectively")
+                print("\n")
                 print(" add -or- exist")
                 selection =input()
                 if selection == "add":
+                    print("\n")
                     print("Add an account")
                     print("Enter account name")
                     accname=input()
@@ -72,17 +78,31 @@ def main():
                     if choice == "Cp":
                         print("Enter password")
                         accpassword=input()
+                        print("\n")
                     elif choice == "Gp":
                         letters = string.ascii_lowercase
                         accpassword="".join(random.choice(letters) for i in range(7))
                         print(f"Password:{accpassword}")
-                    print(f"Username:{accusername} Account name:{accname} Account password:{accpassword}")
+                        print("\n")
+                    print(f"Username:{accusername}")
+                    print(f"Account name:{accname}")
+                    print(f"Account password:{accpassword}")
+                    print("\n")
                 elif selection == "exist":
                     if find_credential(accname):
                         print("Here are your accounts:")
                         for user in display_user():
                             print(f"Account:{user.accname}")
+                            print("\n")
                             print(f"Username:{user.accusername}")
+                            print("\n")
                             print(f"Password:{user.accpassword}")
+                            
+            else:  print("Would you like to sign out")
+            print("Would you like to sign out yes")
+            decision=input()
+            if decision =="yes":
+                print("Thanks for choosing passwordlocker!")
+
 if __name__ == "__main__":
     main()
