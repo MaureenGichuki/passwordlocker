@@ -19,4 +19,7 @@ def find_user(name):
 
 def display_user():
     return User.user_display()
-    
+
+def create_newcredential(accusername,accname,accpassword):
+    new_credential= credential(accusername,accname,accpassword)
+    return new_credential
