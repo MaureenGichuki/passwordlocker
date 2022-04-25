@@ -8,3 +8,6 @@ def create_newuser(username,password):
 
 def save_user(user):
     user.save_user()
+
+def delete_user(user):
+    user.delete_user()
