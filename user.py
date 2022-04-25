@@ -31,6 +31,7 @@ class user:
 
         """
         user.userlist.remove(self)
+
     @classmethod
     def user_display(cls):
         """
@@ -39,6 +40,7 @@ class user:
 
         """
         return cls.userlist
+
     @classmethod
     def find_user(cls,name):
         """
@@ -81,3 +83,23 @@ class credentials:
 
         """
         credentials.credentiallist.remove(self)
+
+    @classmethod
+    def credential_display(cls):
+        """
+
+        the method credential_display returns information from the userlist dict
+
+        """
+        return cls.credentiallist
+
+    @classmethod
+    def find_credential(cls,a_name):
+        """
+
+        the method find_credential returns an account that matches the name
+
+        """
+        for credential in cls.credentiallist:
+            if credential.accname==a_name:
+                return credential
