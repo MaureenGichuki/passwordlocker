@@ -39,3 +39,13 @@ class User:
 
         """
         return cls.userlist
+    @classmethod
+    def find_user(cls,name):
+        """
+
+        the method find_user returns user that matches the name
+
+        """
+        for user in cls.userlist:
+            if user.username==name:
+                return user
