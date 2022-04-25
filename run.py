@@ -74,14 +74,15 @@ def main():
                         accpassword=input()
                     elif choice == "Gp":
                         letters = string.ascii_lowercase
-                        accpassword="".join(random.choice(letters) for i in range(5,7))
+                        accpassword="".join(random.choice(letters) for i in range(7))
                         print(f"Password:{accpassword}")
                     print(f"Username:{accusername} Account name:{accname} Account password:{accpassword}")
                 elif selection == "exist":
-                    if find_credential(a_name):
+                    if find_credential(accname):
                         print("Here are your accounts:")
-                        for user in credential_display():
+                        for user in display_user():
                             print(f"Account:{user.accname}")
+                            print(f"Username:{user.accusername}")
                             print(f"Password:{user.accpassword}")
 if __name__ == "__main__":
     main()
