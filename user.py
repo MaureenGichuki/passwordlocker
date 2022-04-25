@@ -1,7 +1,7 @@
 from collections import UserList
 
 
-class User:
+class user:
     """
     This class generates new users
     """
@@ -23,14 +23,14 @@ class User:
         the method save_user saves user information into the userlist
 
         """
-        User.userlist.append(self)
+        user.userlist.append(self)
 
     def delete_user(self):
         """
         the method delete_user deletes user from the userlist dict
 
         """
-        User.userlist.remove(self)
+        user.userlist.remove(self)
     @classmethod
     def user_display(cls):
         """
@@ -49,3 +49,11 @@ class User:
         for user in cls.userlist:
             if user.username==name:
                 return user
+
+
+class credentials:
+    """
+
+    this class instantiates user credentials
+
+    """
