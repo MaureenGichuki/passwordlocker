@@ -17,10 +17,25 @@ class User:
        
         self.username=username
         self.password=password
-        
+
     def save_user(self):
         """
         the method save_user saves user information into the userlist
 
         """
         User.userlist.append(self)
+
+    def delete_user(self):
+        """
+        the method delete_user deletes user from the userlist dict
+
+        """
+        User.userlist.remove(self)
+    @classmethod
+    def user_display(cls):
+        """
+
+        the method user_display returns information from the userlist dict
+
+        """
+        return cls.userlist
