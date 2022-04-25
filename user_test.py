@@ -16,7 +16,7 @@ def setUp(self):
     """
     self.newuser= User("maureen123","hey123")
 
-def inittest(self):
+def test_init(self):
 
     """
     test to confirm if the object user has been initialized correctly
@@ -25,3 +25,11 @@ def inittest(self):
     self.assertEqual(self.newuser.username,"maureen123")
 
     self.assertEqual(self.newuser.password,"hey123")
+
+def test_save_user(self):
+    """
+    test to check if user is saved into the userlist dict
+
+    """
+    self.newuser.save_user()
+    self.assertEqual(len(User.userlist),1)
