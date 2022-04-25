@@ -17,19 +17,19 @@ As a user, I also want to view my various account credentials and their password
 
 ## Installation
 The application requires
-*python3.6
-*pip
+* python3.6
+* pip
 
 ## Cloning
 Open the terminal through {Ctrl+Alt+T}
 git clone [https://github.com/MaureenGichuki/passwordlocker.git]
 
 ## Technologies Used
-*python3.6
+* python3.6
 
 ## Contact Information
 You can reach me at[maureenwaruguru@gmail.com]
 
 ## License
-*MIT Licence
-*Copyright (c) 2022 Maureen Gichuki
+* MIT Licence
+* Copyright (c) 2022 Maureen Gichuki
