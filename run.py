@@ -1,11 +1,9 @@
-from tokenize import Name
-from unicodedata import name
-from user import User, user
-from user import credentials
+from user import User
+from user import Credentials
 
 
 def create_newuser(username,password):
-    new_user=user(username,password)
+    new_user= User(username,password)
     return new_user
 
 def save_user(user):
@@ -14,12 +12,12 @@ def save_user(user):
 def delete_user(user):
     user.delete_user()
 
-def find_user(name):
-    return User.find_user(name)
+def find_user(namey):
+    return User.find_user(namey)
 
 def display_user():
     return User.user_display()
 
 def create_newcredential(accusername,accname,accpassword):
-    new_credential= credential(accusername,accname,accpassword)
+    new_credential= Credentials(accusername,accname,accpassword)
     return new_credential

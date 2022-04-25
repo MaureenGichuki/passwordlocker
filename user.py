@@ -42,14 +42,14 @@ class User:
         return cls.userlist
 
     @classmethod
-    def find_user(cls,name):
+    def find_user(cls,namey):
         """
 
         the method find_user returns user that matches the name
 
         """
         for user in cls.userlist:
-            if user.username==name:
+            if user.username==namey:
                 return user
 
 
