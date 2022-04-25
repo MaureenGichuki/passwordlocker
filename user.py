@@ -67,10 +67,17 @@ class credentials:
             self.accusername=accusername
             self.accname=accname
             self.accpassword=accpassword
-            
+
     def save_credential(self):
         """
         the method save_credential saves credential information into the credentiallist dict
 
         """
         credentials.credentiallist.append(self)
+    
+    def delete_credential(self):
+        """
+        the method delete_credential deletes account information from the credentiallist dict
+
+        """
+        credentials.credentiallist.remove(self)
